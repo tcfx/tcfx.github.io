@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav { background-color: royalblue;
+	text-align: center;
+	letter-spacing: 4px;
+	word-spacing: double;
+	border: double;
+	
+}
+nav:hover {background-color: dodgerblue;
+}
+body { background-blend-mode: color-dodge; background-color: #001FD2; 
+}
+main {background-color: royalblue; text-decoration-color: antiquewhite;  border: double; border-color: #031967; border-style:solid;
+}
+h1 {font-display: block; color: aliceblue; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; 
+}
+
+a:hover {background-color: #8395FC;
+}
+
+
+p {font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";font-size: 20px; white-space: pre-line;}
+.TravelerAir {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 70px;
+	font-style: italic;
+	font-family:   "miss-saint-delafield";
+}
+
+.logo {position: absolute;
+  top: 87.9%;
+  left: 49%;
+	right: 10%;
+transform: rotate(10deg);
+}
+
+
+aside {border: double; text-align: 
+center; background-color: royalblue; border-color: #031967;}
+
+.ari{display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.first {
+	float: left;
+  width: 33.33%;
+	padding: 5px;
+}
+
+
+
+p {text-align: left;
+color: aliceblue;}
+
+h3 {color: aliceblue; font-display: fallback; font-style: italic; font-size: 23px; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+h4 {text-align: center; color: aliceblue;}
+
+h4:hover {background-color: blue;}
+
+.down {position: absolute;
+	left: 50%;
+	down: 10%;
+	transform: rotate(12deg);
+}
+
+.sydney {line-height: 1.5;
+font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; font-display: fallback;
+color: aliceblue;
+}
+.tel {color:aliceblue; line-height: 1.5;
+}
+.ariz {line-height: 1.5; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; color: aliceblue; 
+}

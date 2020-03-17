@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            function showDisableOverlay(show) {
+                var disableOverlay = document.getElementById("disableOverlay");
+                
+                if(show) {
+                    disableOverlay.style.display = "block";
+                } else {
+                    disableOverlay.style.display = "none";
+                }
+            }
+            
+            function getQueryStrings() { 
+              var assoc  = {};
+              var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+              var queryString = '$$QUERYSTR$$';
+              var keyValues = queryString.split('&'); 
+
+              for(var i in keyValues) { 
+                var key = keyValues[i].split('=');
+                if (key.length > 1) {
+                  assoc[decode(key[0])] = decode(key[1]);
+                }
+              } 
+              return assoc; 
+            }
+            //Extract the query params and attach them to the global object dwData.
+            window.dwData = getQueryStrings();
+            
+        </script>
+        <title>Dreamweaver Extract Service - PSD CSS Extraction, Measurements and Image Optimization Service for the Web</title>
+        <link href="lib/graphite-api/public/js/ccweb.files.extract/css/topcoat.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="lib/graphite-api/public/css/topcoat_base.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="lib/graphite-api/public/css/global.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="lib/graphite-api/public/css/application.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="lib/graphite-api/public/css/creative-cloud.css" media="all" rel="stylesheet" type="text/css" />        
+        <link href="lib/graphite-api/public/css/userProfile.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="lib/graphite-api/public/js/ccweb.files.extract/css/zIndex.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/dreamweaver.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.rcrumbs.css" />
+
+        <script data-main="lib/graphite-api/public/js/dwmain.js" src="lib/graphite-api/public/js/libs/require/require.js"></script>
+    </head>
+
+    <body class="desktop">
+        <div id="main" class="page">
+            <div id ="launchContainer">
+                <div id="results" class="content">
+                </div>
+            </div>
+        </div>
+        <div id="disableOverlay">
+        </div>
+    </body>
+</html>
